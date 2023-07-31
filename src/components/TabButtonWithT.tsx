@@ -9,9 +9,9 @@ export const TabButtonWithT: React.FC<{
   const [isPending, startTransition] = useTransition();
 
   const handlePress = () => {
-    startTransition(() => {
-      onPress();
-    });
+    // startTransition(() => {
+    onPress();
+    // });
   };
 
   if (isActive) {

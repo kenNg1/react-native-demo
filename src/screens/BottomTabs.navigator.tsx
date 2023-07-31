@@ -9,6 +9,7 @@ import {theme} from '../theme';
 import T0 from './T0.screen';
 import T1 from './T1.screen';
 import T2 from './T2.screen';
+import T3 from './T3.screen';
 
 const BottomTabs = createBottomTabNavigator();
 
@@ -44,6 +45,10 @@ export const BottomTabsNavigator: React.FC = () => {
             return <Text>T2</Text>;
           }
 
+          if (route.name === 'T3') {
+            return <Text>T3</Text>;
+          }
+
           if (route.name === 'Suspense') {
             return <Text>S</Text>;
           }
@@ -69,6 +74,7 @@ export const BottomTabsNavigator: React.FC = () => {
       <BottomTabs.Screen name="T0" component={T0} options={{title: 'T0'}} />
       <BottomTabs.Screen name="T1" component={T1} options={{title: 'T1'}} />
       <BottomTabs.Screen name="T2" component={T2} options={{title: 'T2'}} />
+      <BottomTabs.Screen name="T3" component={T3} options={{title: 'T3'}} />
       <BottomTabs.Screen
         name="Suspense"
         component={Analytics}
